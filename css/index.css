@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2|Lobster');
 
 body {
-    background-color: #FFCCFF;
     max-width: 977px;
     margin: auto;
 }
@@ -74,7 +73,6 @@ header .banner h1 {
 .column2 {
     float: left;
     width: 100%;
-
 }
 
 .row:after {
@@ -87,7 +85,6 @@ header .banner h1 {
     .column1,
     .column2 {
         width: 50%;
-
     }
 }
 
