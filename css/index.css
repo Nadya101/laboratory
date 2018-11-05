@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Exo+2|Lobster');
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 html {
     box-sizing: border-box;
@@ -270,7 +271,7 @@ tr:hover {
 @media (min-width: 500px) {
     .galery {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
     }
 
     .img {
@@ -279,17 +280,19 @@ tr:hover {
     }
 }
 
-
-.infoCtc {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
+@media (min-width: 500px) {
+    .infoCtc {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px;
+    }
 }
 
 #adrs,
-#phone {
+#phone, .icons {
     text-align: center;
     border-right: 2px solid #ccc;
+
 }
 
 .footer {
@@ -312,6 +315,7 @@ tr:hover {
     box-shadow: 0 1px 5px black;
     border: 1px solid rgba(104, 104, 104, 0.8);
     margin: auto;
+    margin-top: 30px;
 }
 
 .send:hover {
@@ -349,5 +353,13 @@ tr:hover {
     font-family: Verdana;
     font-size: 1rem;
     box-shadow: 2px 1px 5px rgba(104, 104, 104, 0.9);
+
+}
+
+i {
+font-family: fontawesome !important;
+font-size:70px;
+padding: 0;
+margin:0;
 
 }
