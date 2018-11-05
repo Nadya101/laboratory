@@ -30,9 +30,7 @@ body {
     color: #333;
 }
 
-img {
-    max-width: 100%;
-}
+
 
 .wrapper {
     display: grid;
@@ -107,8 +105,6 @@ img {
     text-shadow: 1px 1px 1px rgba(000, 000, 000, 0.8);
 }
 
-/*ok*/
-
 #reserch,
 h3 {
     background: #ddd;
@@ -122,6 +118,7 @@ h3 {
     word-spacing: 5px;
     letter-spacing: 1.5px;
 }
+
 
 .dropdown {
     position: relative;
@@ -157,6 +154,10 @@ h3 {
     margin: 10px;
 }
 
+.marker {
+    width: 100%;
+}
+
 @media (min-width: 500px) {
     .marker {
         width: 45%;
@@ -178,34 +179,29 @@ h3 {
     }
 }
 
-/*ok*/
-
-
-.galery > img {
-     border-radius: 8px;
-     width: 100%;
-}
-
 .info {
-    width: 100%;
-    height: 400px;
-    overflow-y: scroll;
     border: 1px solid #ccc;
-    margin-top: 5px;
-    justify-content: justify;
+    text-align: justify;
+    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    padding: 30px 30px;
+
 }
 
-
-
+.static {
+    width: 95%;
+    float: right;
+    padding-top: 20px;
+}
 
 
 @media (min-width: 500px) {
- .galery > img {
-     border-radius: 8px;
-     width: 33%;
-}
+    .static {
+        display: inline;
+        width: 40%;
+        float: right;
+        margin: 20px;
     }
-
+}
 
 
 table {
@@ -261,6 +257,41 @@ tr:hover {
     border-bottom: none;
 }
 
+.galery {
+    display: grid;
+    grid-template-columns: auto;
+
+}
+
+.img {
+    width: 100%;
+}
+
+@media (min-width: 500px) {
+    .galery {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .img {
+        margin: 0;
+        height: 200px;
+    }
+}
+
+
+.infoCtc {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+#adrs,
+#phone {
+    text-align: center;
+    border-right: 2px solid #ccc;
+}
+
 .footer {
     margin-top: 2rem;
     background-color: #333;
@@ -270,47 +301,53 @@ tr:hover {
 }
 
 
-.form-inner {
-    position: relative;
+
+.conteiner .send {
+    background-color: #ccc;
+    color: #333;
+    font-weight: bold;
+    max-width: 170px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px black;
+    border: 1px solid rgba(104, 104, 104, 0.8);
+    margin: auto;
 }
 
-.form-inner h3 {
-    position: relative;
-    margin-top: 0;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 26px;
-    text-transform: uppercase;
+.send:hover {
+    background-color: pink;
 }
 
-.form-inner label {
-    display: block;
-    padding-left: 15px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    text-transform: uppercase;
-    font-size: 14px;
+.transparent {
+    max-width: 70%;
+    padding: 50px 60px;
+    margin: 10px auto 0;
+    background-image: url(../img/mail.png);
+    border-style: outset;
 }
+
+
+.form-inner input:focus,
+#textarea:focus {
+    background: rgba(255, 255, 255, 1);
+
+}
+
+
 
 .form-inner input,
 #textarea {
     display: block;
-    width: 100%;
-    padding: 15px 0;
-    margin: 10px 0 15px;
+    width: 80%;
     border-width: 0;
     line-height: 40px;
     border-radius: 20px;
-    color: white;
+    color: black;
     font-weight: bold;
-    background: rgba(255, 255, 255, .2);
+    background: rgba(255, 255, 255, 0.4);
     font-family: 'Roboto', sans-serif;
-}
+    font-family: Verdana;
+    font-size: 1rem;
+    box-shadow: 2px 1px 5px rgba(104, 104, 104, 0.9);
 
-/*.form-inner input[type="submit"] {*/
-/*    background: grey;*/
-/*    background-color: #e6c1ed;*/
-/*    box-shadow: 2px 3px 5px grey;*/
-/*    margin: auto;*/
-/*}*/
+}
