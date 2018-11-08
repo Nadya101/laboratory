@@ -106,18 +106,6 @@ h3 {
     letter-spacing: 1.5px;
 }
 
-/*#btnReserch {*/
-
-/*    display: block;*/
-
-/*}*/
-
-/*.marker {*/
-
-/*    width: 100%;*/
-
-/*}*/
-
 .info {
     border: 1px solid #ccc;
     text-align: justify;
@@ -201,7 +189,7 @@ tr:hover {
     color: #fff;
     text-align: center;
     padding: 1rem;
-}
+    }
 
 .conteiner .send {
     background-color: #ccc;
@@ -221,9 +209,10 @@ tr:hover {
 }
 
 .transparent {
-    max-width: 70%;
+    max-width: 80%;
     margin: 10px auto 0;
     border-style: outset;
+    background-image: url(../img/blood-crop.jpg);
 }
 
 .form-inner input:focus,
@@ -280,13 +269,7 @@ i {
         grid-template-columns: auto auto auto;
         padding: 10px;
     }
-    /*.marker {*/
-    /*    max-width: 600px;*/
-    /*    float: right;*/
-    /*    margin-right: 10px;*/
-    /*    margin-top: 20px;*/
-    /*    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);*/
-    /*}*/
+    
     .transparent {
         max-width: 90%;
         padding: 50px 60px;
