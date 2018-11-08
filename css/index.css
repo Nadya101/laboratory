@@ -106,14 +106,17 @@ h3 {
     letter-spacing: 1.5px;
 }
 
-#btnReserch {
-    display: block;
-}
+/*#btnReserch {*/
 
+/*    display: block;*/
 
-.marker {
-    width: 100%;
-}
+/*}*/
+
+/*.marker {*/
+
+/*    width: 100%;*/
+
+/*}*/
 
 .info {
     border: 1px solid #ccc;
@@ -181,6 +184,7 @@ tr:hover {
 #hoursOfWork li:last-child {
     border-bottom: none;
 }
+
 .list-unstyled-opening-hours {
     margin-top: 20px;
 }
@@ -219,13 +223,12 @@ tr:hover {
 .transparent {
     max-width: 70%;
     margin: 10px auto 0;
-    background-image: url(../img/mail.png);
     border-style: outset;
 }
 
 .form-inner input:focus,
 #textarea:focus {
-        background: rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 1);
 }
 
 .form-inner input,
@@ -252,17 +255,20 @@ i {
     margin: 0;
 }
 
-@media(min-width: 500px) {
+@media(min-width: 600px) {
     .main-nav ul {
         padding: 0;
         display: flex;
         margin: auto;
         justify-content: space-between;
         margin-top: -10px;
+        white-space: nowrap;
     }
+
     .main-nav li {
         width: 25%;
     }
+
     .static {
         width: 40%;
         float: right;
@@ -274,29 +280,43 @@ i {
         grid-template-columns: auto auto auto;
         padding: 10px;
     }
-    .marker {
-        max-width: 600px;
-        float: right;
-        margin-right: 10px;
-        margin-top: 20px;
-        box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-    }
+    /*.marker {*/
+    /*    max-width: 600px;*/
+    /*    float: right;*/
+    /*    margin-right: 10px;*/
+    /*    margin-top: 20px;*/
+    /*    box-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);*/
+    /*}*/
     .transparent {
-    max-width: 90%;
-    padding: 50px 60px;
-    margin: 10px auto 0;
-    background-image: url(../img/mail.png);
+        max-width: 90%;
+        padding: 50px 60px;
+        margin: 10px auto 0;
+
+    }
+
+    .contentReserch {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    .marker {
+        grid-column: 2/3;
+        margin-top: 15px;
+    }
+
+    .dropdown {
+        grid-row: 1/2;
+        grid-column: 1/2;
     }
 }
 
 a {
     text-decoration: none;
-
 }
 
-.dropdown {
-    display: block;
-    background-color: transparent;
+.marker {
+    width: 100%;
+    box-shadow: 2px 1px 5px rgba(104, 104, 104, 0.9);
 }
 
 .popover__title {
@@ -312,7 +332,7 @@ a {
     margin-top: 1rem;
     display: block;
     box-shadow: 2px 1px 5px rgba(104, 104, 104, 0.9);
-    max-width: 350px;
+    width: 100%;
 }
 
 .popover__content {
